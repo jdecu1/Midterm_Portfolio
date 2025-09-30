@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albert Einstein – Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Albert Einstein</h1>
+      <h2>Physicist</h2>
+    </div>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+        <span>Menu</span>
+      </label>
+
+        <ul class="nav-grid">
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#discoveries">Important Discoveries</a></li>
+            <li><a href="#theories">Theories</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+  </header>
+
+
+  <main class="page-grid container">
+
+    <section id="about" class="card">
+      <h3>About</h3>
+
+      <div class="about-grid">
+        <img src="einstein.jpg" alt="Photograph of Albert Einstein" class="about-photo" />
+
+        <p>
+          Albert Einstein was a theoretical physicist whose work reshaped our understanding of space, time, energy, and matter.
+          His thinking led to breakthroughs including special and general relativity, the photoelectric effect explanation,
+          and foundational insights that helped launch quantum theory.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="hobbies" class="card">
+        <h3>Hobbies</h3>
+        <ul class="list-grid two-col">
+            <li>Playing the violin and piano</li>
+            <li>Sailing</li>
+            <li>Philosophy and writing</li>
+            <li>Long walks and nature</li>
+            <li>Reading literature</li>
+        </ul>
+    </section>
+
+
+    <section id="discoveries" class="card">
+      <h3>Important Discoveries</h3>
+
+      <ul class="list-grid two-col">
+        <li>Photoelectric Effect and Light Quanta</li>
+        <li>Brownian Motion Explanation</li>
+        <li>Mass–Energy Equivalence (E=mc²)</li>
+        <li>Gravitational Redshift Prediction</li>
+        <li>Light Bending by Gravity</li>
+        <li>Stimulated Emission Concept</li>
+      </ul>
+    </section>
+
+
+    <section id="theories" class="card">
+      <h3>Theories</h3>
+
+      <ul class="cards-grid">
+        <li>
+          <p><strong>Special Relativity (1905):</strong> Space and time form a single entity, spacetime; the laws of physics are invariant in all inertial frames; the speed of light is constant.</p>
+        </li>
+
+        <li>
+          <p><strong>General Relativity (1915):</strong> Gravity is the curvature of spacetime caused by mass and energy; predicts phenomena such as gravitational waves and black holes.</p>
+        </li>
+
+        <li>
+          <p><strong>Einstein’s A and B Coefficients:</strong> Described absorption, spontaneous emission, and stimulated emission, laying groundwork for lasers.</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="papers" class="card">
+      <h3>Papers</h3>
+
+      <ul class="list-grid one-col">
+        <li>On a Heuristic Point of View Concerning the Production and Transformation of Light (1905)</li>
+        <li>On the Movement of Small Particles Suspended in Stationary Liquids (1905)</li>
+        <li>On the Electrodynamics of Moving Bodies (1905)</li>
+        <li>Does the Inertia of a Body Depend Upon Its Energy Content? (1905)</li>
+        <li>The Foundation of the General Theory of Relativity (1916)</li>
+      </ul>
+    </section>
+
+
+    <section id="gallery" class="card">
+      <h3>Gallery</h3>
+
+      <div class="gallery-grid">
+        <figure>
+          <img src="gallery/einstein-1.jpg" alt="Einstein at the blackboard" />
+          <figcaption>At the blackboard</figcaption>
+        </figure>
+
+        <figure>
+          <img src="gallery/einstein-2.jpg" alt="Einstein portrait" />
+          <figcaption>Portrait</figcaption>
+        </figure>
+
+        <figure>
+          <img src="gallery/einstein-3.jpg" alt="Einstein with colleagues" />
+          <figcaption>With colleagues</figcaption>
+        </figure>
+
+        <figure>
+          <img src="gallery/einstein-4.jpg" alt="Einstein at Princeton" />
+          <figcaption>Princeton years</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <section id="contact" class="card">
+      <div class="contact-intro">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:einstein@example.com">einstein@example.com</a></p>
+        <p>Or follow on social media:</p>
+
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form action="mailto:einstein@example.com?subject=Portfolio%20Website%20Inquiry" method="POST" enctype="text/plain" class="contact-form">
+        <div class="form-grid">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message"></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p>© 2025 Albert Einstein</p>
+      <p style="font-size: 0.9rem; color:#666;">Portfolio for academic purposes</p>
+    </div>
+  </footer>
+
+</body>
+</html>
