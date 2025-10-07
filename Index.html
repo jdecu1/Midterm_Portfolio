@@ -30,6 +30,7 @@
             <li><a href="#theories">Theories</a></li>
             <li><a href="#papers">Papers</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#emc2">E=mc² Calculator</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -144,35 +145,42 @@
     </section>
 
 
+    <section id="emc2" class="card">
+      <h3>E=mc² Calculator</h3>
+      <div class="form-grid">
+        <label for="mass">Mass (kg)</label>
+        <input type="number" id="mass" placeholder="Enter mass to get energy" step="any" />
+
+        <label for="energy">Energy (J)</label>
+        <input type="number" id="energy" placeholder="Enter energy to get mass" step="any" />
+      </div>
+      <div class="actions">
+        <button id="calcBtn" type="button">Calculate</button>
+        <button id="clearBtn" type="button">Clear</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+
     <section id="contact" class="card">
       <div class="contact-intro">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:einstein@example.com">einstein@example.com</a></p>
-        <p>Or follow on social media:</p>
+        <p>Email: <a href="mailto:einstein@examplefakeemail.com">einstein@examplefakeemail.com</a></p>
+        <p>Follow on social media:</p>
 
         <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
         </div>
       </div>
-
-      <form action="mailto:einstein@example.com?subject=Portfolio%20Website%20Inquiry" method="POST" enctype="text/plain" class="contact-form">
-        <div class="form-grid">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="Message"></textarea>
-        </div>
-
-        <div class="actions">
-          <button type="submit">Send</button>
-        </div>
-      </form>
     </section>
 
   </main>
@@ -180,10 +188,11 @@
 
   <footer class="site-footer">
     <div class="footer-inner container">
-      <p>© 2025 Albert Einstein</p>
+      <p>© 2025 Joe DeCurtis (Last Updated 10/07/2025)</p>
       <p style="font-size: 0.9rem; color:#666;">Portfolio for academic purposes</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
