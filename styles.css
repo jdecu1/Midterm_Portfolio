@@ -337,5 +337,16 @@ body::after {
     display:block
   }
 
-}
+  #emc2 .form-grid{
+    display:grid;grid-template-columns:auto 1fr;gap:.75rem
+  }
 
+  #emc2 .form-grid label{
+    grid-column:1;align-self:center
+  }
+
+  #emc2 .form-grid input{
+    grid-column:2;width:100%
+  }
+
+}

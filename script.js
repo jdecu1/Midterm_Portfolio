@@ -22,7 +22,7 @@ calcBtn.addEventListener('click', () => {
     massEl.value = mass
     resultEl.textContent = 'Mass: ' + formatNum(mass) + ' kg'
   } else if (!isNaN(m) && !isNaN(e)) {
-    resultEl.textContent = 'Clear one field and try again'
+    resultEl.textContent = 'Clear fields and try again'
   } else {
     resultEl.textContent = 'Enter a mass or an energy'
   }
